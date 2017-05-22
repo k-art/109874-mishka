@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артём Козлов](https://up.htmlacademy.ru/adaptive/11/user/109874).
-* Наставник: `Неизвестно`.
+* Наставник: `Сам по себе`.
 
 ---
 
