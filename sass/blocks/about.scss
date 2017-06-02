@@ -1,0 +1,19 @@
+.about {
+
+}
+
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about__list {
+  @include no-list;
+}
+
+.about__item {
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: bold;
+}

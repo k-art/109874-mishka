@@ -4,29 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Mishka</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="page-header">
-      <div class="logo">
-        <a><img src="http://placehold.it/86x35"></a>
-      </div>
-
       <nav class="main-nav main-nav--no-js">
-        <button class="main-nav__toggle" type="button"></button>
+
+        <div class="page-header__logo">
+          <a><img src="img/logo-mobile.svg" width="86" height="35"></a>
+        </div>
+
+        <button class="main-nav__toggle main-nav__toggle--no-js" type="button"></button>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
         </ul>
 
-        <ul class="main-menu__list main-menu__list--dashbord">
-          <li class="main-nav__item">
-            <form action="#" method="get">
-              <input id="search" type="search" placeholder="Поиск по сайту">
-              <label for="search">Поиск по сайту</label>
-            </form>
-          </li>
+        <ul class="main-nav__list main-nav__list--dashbord">
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a href="#">Корзина: <span>пока пуста</span></a>
           </li>
         </ul>
@@ -34,12 +31,14 @@
 
       <span class="page-header__delivery">Бесплатная доставка по России</span>
 
-      <h1 class="page-header__title">Милые штуки ручной
-работы для дома</h1>
+      <div class="page-header__title-wrapper">
+        <h1 class="page-header__title">Милые штуки ручной <br>
+          работы для дома</h1>
+      </div>
       <div class="sub-nav">
         <ul>
-          <li class="sub-nav__item"><a href="#">Предметы интерьера</a></li>
-          <li class="sub-nav__item"><a href="#">Детские игрушки</a></li>
+          <li class="sub-nav__item"><a href="#">Предметы <br>интерьера</a></li>
+          <li class="sub-nav__item sub-nav__item--right"><a href="#">Детские <br> игрушки</a></li>
         </ul>
       </div>
     </header>
@@ -68,7 +67,7 @@
 
         <div class="product__image">
           <picture>
-            <img src="http://placehold.it/260x315" alt="Вязаные корзинки">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
           </picture>
         </div>
         <div class="product__sale">

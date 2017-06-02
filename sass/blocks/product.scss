@@ -1,0 +1,21 @@
+.product {
+
+}
+
+.product__title {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.product__note {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $green;
+}
