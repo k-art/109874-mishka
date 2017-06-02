@@ -1,0 +1,29 @@
+.main-nav {
+
+}
+
+.main-nav__toggle {
+  &--no-js {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include no-list;
+}
+
+.main-nav__item {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+
+  a {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}

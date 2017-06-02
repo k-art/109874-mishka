@@ -1,0 +1,27 @@
+.sub-nav {
+  ul {
+    @include no-list;
+  }
+}
+
+.sub-nav__item {
+  a {
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 30px;
+    padding-right: 100px;
+    width: 320px;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    background-color: $green;
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  &--right a {
+    background-color: #56c3b2;
+  }
+}
