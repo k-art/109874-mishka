@@ -1,14 +1,19 @@
-@mixin container {
+@mixin container($width: 260px) {
   margin: 0 auto;
-  width: 280px;
+  width: $width;
 
-  @media (min-width: 660px) {
-    width: 620px;
+  @media #{$tablet-widths} {
+    width: 668px;
   }
 
-  @media (min-width: 960px) {
-    width: 940px;
+  @media #{$desktop-widths} {
+    width: 1050px;
   }
+}
+
+@mixin custom-wrapper($width: 260px) {
+  margin: 0 auto;
+  width: $width;
 }
 
 @mixin clearfix {

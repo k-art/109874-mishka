@@ -1,19 +1,47 @@
 .about {
-
+  @include container();
 }
 
 .about__title {
   font-size: 25px;
   line-height: 30px;
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
 }
 
 .about__list {
   @include no-list;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
 }
 
 .about__item {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 30px;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
   font-weight: bold;
+
+  @media #{$tablet-widths} {
+    flex-basis: 50%;
+
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    fill: $green;
+  }
 }

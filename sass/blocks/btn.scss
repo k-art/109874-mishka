@@ -1,0 +1,30 @@
+.btn {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 260px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $grey;
+  border: 2px solid $grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media #{$tablet-widths} {
+    width: 290px;
+  }
+
+  &--reviews {
+    @media #{$tablet-widths} {
+      width: 175px;
+    }
+  }
+
+  &--contacts {
+    width: 230px;
+  }
+}

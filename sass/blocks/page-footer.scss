@@ -1,0 +1,21 @@
+.page-footer {
+  background-color: $bg-color;
+  text-align: center;
+}
+
+.page-footer__wrapper {
+  @include container();
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  @media #{$mobile-only} {
+    display: none;
+  }
+}
