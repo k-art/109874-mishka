@@ -1,0 +1,9 @@
+.social-links {
+  span {
+    @include visually-hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

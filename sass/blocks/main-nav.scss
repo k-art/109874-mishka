@@ -1,5 +1,8 @@
 .main-nav {
-
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__toggle {
@@ -10,20 +13,121 @@
 
 .main-nav__list {
   @include no-list;
+
+  @media #{$tablet-widths} {
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 334px;
+  }
+
+  @media #{$desktop-widths} {
+    order: 0;
+  }
+
+  &--dashbord {
+    @media #{$tablet-widths} {
+      order: 2;
+      flex-wrap: nowrap;
+      margin-left: auto;
+      flex-basis: 348px;
+    }
+
+    @media #{$desktop-widths} {
+      margin-left: 0;
+    }
+  }
 }
 
 .main-nav__item {
+  position: relative;
   display: block;
   padding-top: 30px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
+
+  @media #{$mobile-only} {
+    padding-left: 75px;
+    border-bottom: 1px solid #ececec;
+
+    &:first-of-type {
+      border-top: 1px solid #ececec;
+    }
+
+    &:last-of-type {
+      border: none;
+    }
+
+    svg {
+      position: absolute;
+      left: 30px;
+    }
+  }
+
+  @media #{$tablet-widths} {
+    flex-basis: 167px;
+  }
 
   a {
     font-size: 17px;
     font-weight: bold;
     line-height: 24px;
     text-decoration: none;
-    text-transform: uppercase;
     color: #000000;
+
+    @media #{$tablet-widths} {
+      font-size: 15px;
+    }
+
+    @media #{$desktop-widths} {
+      font-size: 17px;
+    }
+  }
+
+  &--hidden {
+    display: none;
+
+    @media #{$desktop-widths} {
+      display: block;
+
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &--search {
+
+    @media #{$tablet-widths} {
+      align-self: baseline;
+      flex-basis: 82px;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+      text-align: center;
+      flex-shrink: 0;
+
+      span {
+        @include visually-hidden;
+      }
+    }
+  }
+
+  &--basket {
+
+    @media #{$tablet-widths} {
+      flex-basis: 265px;
+      text-align: right;
+      padding-left: 65px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+
+      svg {
+        position: absolute;
+        left: 30px;
+      }
+
+      a {
+        font-size: 17px;
+      }
+    }
   }
 }
